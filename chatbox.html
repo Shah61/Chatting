@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="chatbox.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>myChat</title>
+</head>
+
+<body>
+    <div class="topscreen">
+        <div class="search-bar">
+            <input type="text" placeholder="Search here">
+        </div>
+        <div class="noti">
+            <button type="button" class="icon-button">
+                <span class="material-icons">notifications</span>
+                <span class="icon-button__badge">2</span>
+            </button>
+        </div>
+        <div class="ownProfile">
+            <div class="profile-icon">
+                <span class="profile-initial1">M</span>
+            </div>
+            <div class="profile-name">Mukhtar</div>
+        </div>
+    </div>
+
+    <div class="horizontal-line"></div>
+    <div class="chat-container">
+        <div class="dashboard">
+
+            <button type="button" class="dash-button">
+                <i class="fas fa-book-open"></i>
+            </button>
+
+            <button type="button" class="dash-button">
+                <i class="far fa-envelope"></i>
+            </button>
+
+            <button type="button" class="dash-button">
+                <i class="fas fa-camera"></i>
+            </button>
+
+            <button type="button" class="dash-button">
+                <i class="fas fa-heart"></i>
+            </button>
+
+            <button type="button" class="dash-button">
+                <i class="fas fa-cog"></i>
+            </button>
+        </div>
+        <div class="chat-list">
+            <h2>Favourites</h2>
+
+            <div class="favorite-list">
+
+                <img src="images/profilepicture-removebg-preview.png" class="favorite-item">
+                <img src="images/Emilia.png" class="favorite-item">
+                <img src="images/Kacip.png" class="favorite-item">
+                <img src="images/ezgif.com-webp-to-png.png" class="favorite-item">
+                <img src="images/trojansquirrel.jpg" class="favorite-item">
+
+
+            </div>
+            <div class="recent-chats">
+                <h2>My Chat List</h2>
+
+                <!-- Recent chats with last message and time -->
+                <div class="chat-item">
+
+                    <div class="profile-picture"><img src="images/profilepicture-removebg-preview.png"
+                            alt="Haris Profile"></div>
+                    <div class="chat-details">
+                        <p class="name">Haris Azhari</p>
+                        <p class="last-message">Pape aku roro</p>
+                        <p class="last-time">2 minutes ago</p>
+                    </div>
+                </div>
+
+                <div class="chat-item">
+                    <div class="profile-picture"><img src="images/Emilia.png"></div>
+                    <div class="chat-details">
+                        <p class="name">Emilia&#10084; </p>
+                        <p class="last-message">HII 恋人 &#10084; &#10084;</p>
+                        <p class="last-time">5 minutes ago</p>
+                    </div>
+                </div>
+
+                <div class="chat-item">
+                    <div class="profile-picture"><img src="images/Kacip.png"></div>
+                    <div class="chat-details">
+                        <p class="name">Kacip</p>
+                        <p class="last-message">Aku gay</p>
+                        <p class="last-time">30 minutes ago</p>
+                    </div>
+                </div>
+
+
+                <div class="chat-item">
+                    <div class="profile-picture"><img src="images/ezgif.com-webp-to-png.png"></div>
+                    <div class="chat-details">
+                        <p class="name">Santa-NK1</p>
+                        <p class="last-message">KAU LEK JE NAK CRAFT</p>
+                        <p class="last-time">2 hours ago</p>
+                    </div>
+                </div>
+
+                <div class="chat-item">
+                    <div class="profile-picture"><img src="images/trojansquirrel.jpg"></div>
+                    <div class="chat-details">
+                        <p class="name">Trojan Squirrel</p>
+                        <p class="last-message">Umm...</p>
+                        <p class="last-time">3 hours ago</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chat-window">
+            <div class="topName">
+                <img src="images/profilepicture-removebg-preview.png">
+                <p class="nameChatting">Haris Azhari</p>
+                <div class="statusIndicator"></div>
+                <p class="statusText">Active</p>
+            </div>
+            <div class="chatScreen">
+                <div class="message-container">
+                    <div class="haris-message">
+                        <div class="profile-picture"><img src="images/profilepicture-removebg-preview.png"
+                                alt="Haris Profile"></div>
+                        <div class="message-content">Mota kenape handsome sangat?</div>
+                    </div>
+
+                    <div class="my-message">
+                        <div class="message-content">Nak wat camne rezeki dari tuhan Alhamdulillah</div>
+                        <div class="profile-initial">M</div>
+                    </div>
+
+                    <div class="haris-message">
+                        <div class="profile-picture"><img src="images/profilepicture-removebg-preview.png"
+                                alt="Haris Profile"></div>
+                        <div class="message-content">Sticker Spank</div>
+                    </div>
+
+                    <div class="my-message">
+                        <div class="message-content">Kelemahan aku tu jong</div>
+                        <div class="profile-initial">M</div>
+                    </div>
+
+                    <div class="my-message">
+                        <div class="message-content">ML JOM</div>
+                        <div class="profile-initial">M</div>
+                    </div>
+
+                    <div class="haris-message">
+                        <div class="profile-picture"><img src="images/profilepicture-removebg-preview.png"
+                                alt="Haris Profile"></div>
+                        <div class="message-content">Kau kene sabar sikit agi ta</div>
+                    </div>
+
+                    <div class="my-message">
+                        <div class="message-content">Aku sentiase sabar dan menunggu jong</div>
+                        <div class="profile-initial">M</div>
+                    </div>
+
+                    <div class="my-message">
+                        <div class="message-content">AKU PERCAYA PLAN BUSET KAU</div>
+                        <div class="profile-initial">M</div>
+                    </div>
+
+                    <div class="my-message">
+                        <div class="message-content">BUSETTTT</div>
+                        <div class="profile-initial">M</div>
+                    </div>
+
+                    <div class="haris-message">
+                        <div class="profile-picture"><img src="images/profilepicture-removebg-preview.png"
+                                alt="Haris Profile"></div>
+                        <div class="message-content">Kk ta aku rehat jap</div>
+                    </div>
+
+
+                    <div class="my-message">
+                        <div class="message-content">Alright jong pape roro</div>
+                        <div class="profile-initial">M</div>
+                    </div>
+
+                    <div class="haris-message">
+                        <div class="profile-picture"><img src="images/profilepicture-removebg-preview.png"
+                                alt="Haris Profile"></div>
+                        <div class="message-content">Pape aku roro</div>
+                    </div>
+
+
+                </div>
+                <div class="keyboard">
+                    <div class="emoji-button"><i class="far fa-smile"></i></div>
+                    <input type="text" placeholder="Type a message" class="message-input">
+                    <div class="attachment-button"><i class="fas fa-paperclip"></i></div>
+                    <div class="send-button"><i class="far fa-paper-plane"></i></div>
+                </div>
+            </div>
+        </div>
+        <div class="profile">
+            <img src="images/profilepicture-removebg-preview.png" class="gambar">
+            <p>Haris Azhari</p>
+            <a href="mailto:SakataAzhari@gmail.com">SakataAzhari@gmail.com</a>
+            <div>
+                <img src="images/phone.png" class="phone">
+                <img src="images/videocall.png" class="videocall">
+                <img src="images/mail.png" class="mail">
+            </div>
+
+            <div class="social">
+                <a href="" class="fb"><i class="fa-brands fa-facebook-f"></i> PremanTank</a>
+                <a href="" class="twitter"><i class="fa-brands fa-twitter"></i> HarisTudung</a>
+                <a href="" class="ig"><i class="fa-brands fa-instagram"></i> SakataAzhari</a>
+            </div>
+
+            <div class="choices">
+                <p onclick="showSharedFiles()" id="sharedFilesOption">Shared Files</p>
+                <p onclick="showImages()" id="imagesOption">Images</p>
+            </div>
+
+            <div id="sharedFilesContent" class="content">
+                <!-- Content for Shared Files -->
+                <p>Shared Files content goes here...</p>
+            </div>
+
+            <div id="imagesContent" class="content">
+                <!-- Content for Images -->
+                <p>Images content goes here...</p>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        function showSharedFiles() {
+            document.getElementById('sharedFilesContent').style.display = 'block';
+            document.getElementById('imagesContent').style.display = 'none';
+
+            // Update the active class
+            document.getElementById('sharedFilesOption').classList.add('active');
+            document.getElementById('imagesOption').classList.remove('active');
+        }
+
+        function showImages() {
+            document.getElementById('sharedFilesContent').style.display = 'none';
+            document.getElementById('imagesContent').style.display = 'block';
+
+            // Update the active class
+            document.getElementById('sharedFilesOption').classList.remove('active');
+            document.getElementById('imagesOption').classList.add('active');
+        }
+
+
+
+        var chatItems = document.querySelectorAll('.chat-item');
+        chatItems.forEach(function (item) {
+            item.addEventListener('click', function () {
+                // Remove the class from all chat items
+                chatItems.forEach(function (item) {
+                    item.classList.remove('selected-chat-item');
+                });
+
+                // Add the class to the clicked chat item
+                item.classList.add('selected-chat-item');
+            });
+        });
+
+
+    </script>
+</body>
+
+</html>

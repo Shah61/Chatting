@@ -1,0 +1,502 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    overflow: hidden;
+    caret-color: transparent;
+
+}
+
+.topscreen {
+    display: flex;
+}
+
+.search-bar {
+    margin-left: 5%;
+    width: 85%;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    outline: none;
+    background: url('images/searchicon-removebg-preview.png') no-repeat;
+    background-size: 20px;
+    /* Adjust the size of the icon */
+    background-position: 10px center;
+    /* Adjust the position of the icon */
+    padding-left: 40px;
+}
+
+.noti,
+.ownProfile {
+    border-right: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.noti {
+    border-left: 1px solid #ccc;
+    width: 5%;
+}
+
+.ownProfile {
+    width: 10%;
+    background-color: #ffffff;
+    color: #434e99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.profile-icon {
+    width: 30px;
+    height: 30px;
+    background-color: #665bd8;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-initial1 {
+    font-size: 15px;
+    color: #ffffff;
+}
+
+
+.profile-name {
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+
+}
+
+.horizontal-line {
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+}
+
+.chat-container {
+    display: flex;
+    height: 100vh;
+}
+
+.chat-list {
+    width: 20%;
+    border-right: 1px solid #ccc;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.chat-window {
+    flex: 1;
+    width: 50%;
+    border-right: 1px solid #ccc;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.chat-item {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.icon-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 40px;
+    height: 40px;
+    color: #333333;
+    background: #ffffff;
+    border: none;
+    outline: none;
+}
+
+.icon-button:hover {
+    cursor: pointer;
+}
+
+.icon-button:active {
+    background: #6b5e5e;
+}
+
+.icon-button__badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 25px;
+    height: 25px;
+    background: red;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.profile {
+    width: 20%;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.gambar {
+    width: 40%;
+    margin-left: 80px;
+}
+
+.phone {
+    width: 10%;
+    margin-left: 65px;
+    margin-top: 10px;
+}
+
+.videocall {
+    width: 11%;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.mail {
+    width: 11%;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.profile p {
+    margin-left: 80px;
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.profile a {
+    color: rgb(179, 178, 178);
+    margin-left: 50px;
+    margin-top: -10px;
+    display: block;
+}
+
+.social {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    /* Aligns the children in a column (from top to bottom) */
+    align-items: center;
+    background-color: rgb(244, 245, 255);
+    margin-top: 10px;
+    height: 15%;
+}
+
+.social a {
+    margin: 8px 10px;
+    color: rgba(0, 0, 0, 0.589);
+}
+
+.choices {
+    margin-top: 30px;
+    margin-left: 20px;
+    display: flex;
+}
+
+.choices p {
+    font-size: 18px;
+    cursor: pointer;
+    color: #333;
+    margin: 0;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+.choices p.active {
+    color: rgb(0, 0, 0);
+    text-decoration: underline rgb(1, 187, 249);
+    text-underline-offset: 1em;
+}
+
+.content p {
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.topName {
+    height: 60px;
+    padding-left: 0;
+    border-bottom: 1px solid #ccc;
+}
+
+
+
+.topName img {
+    width: 45px;
+    display: inline-block;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+.nameChatting {
+    margin-left: 100px;
+    margin-top: -35px;
+    font-weight: 700;
+}
+
+
+.userDetails {
+    display: flex;
+    align-items: center;
+}
+
+.statusIndicator {
+    width: 10px;
+    height: 10px;
+    background-color: green;
+    border-radius: 50%;
+    margin-left: 220px;
+    margin-top: -29px;
+}
+
+
+.statusText {
+    color: #2987f2;
+    font-size: 12px;
+    margin-left: 240px;
+    margin-top: -11px;
+}
+
+.chatScreen {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
+}
+
+.message-container {
+    flex: 1;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+.message {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.haris-message {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-picture {
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.profile-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.my-message {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* Align to the right */
+    margin-bottom: 20px;
+}
+
+.profile-initial {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #665bd8;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.message-content {
+    display: flex;
+    align-items: center;
+    max-width: 70%;
+    /* Limit message width */
+}
+
+
+.keyboard {
+    border: 1px solid #ced4da;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #ffffff;
+    position: fixed;
+    bottom: 0;
+    width: 58.6%;
+}
+
+.emoji-button,
+.attachment-button,
+.send-button {
+    font-size: 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    color: #868e96;
+}
+
+.message-input {
+    flex: 1;
+    padding: 10px;
+    outline: none;
+    font-size: 16px;
+    border: none;
+    caret-color: #007bff;
+
+}
+
+.chat-list {
+    background-color: rgb(244, 245, 255);
+    color: rgb(137, 137, 239);
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    border-right: 1px solid #ccc;
+    box-sizing: border-box;
+    overflow-y: auto;
+    margin-left: 5%;
+}
+
+.chat-list h2,
+.recent-chats h2 {
+    display: block;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+    margin-top: -10px;
+}
+
+
+.favorite-list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.favorite-item {
+    width: 30px;
+    height: 30px;
+    background-color: #665bd8;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.favorite-item:hover {
+    background-color: #434e99;
+}
+
+.recent-chats {
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-item {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.chat-item:hover {
+    background-color: #f0f0f0;
+}
+
+.profile-picture img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.chat-details {
+    margin-left: 10px;
+}
+
+.name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.last-message,
+.last-time {
+    font-size: 12px;
+    color: #666;
+}
+
+.selected-chat-item {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.dashboard {
+    height: 100%;
+    width: 5%;
+    border-right: 1px solid #ccc;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to bottom, #05059d, #001F3F);
+    overflow: hidden;
+}
+
+.dash-button {
+    display: block;
+    margin-top: 60px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.dash-button i {
+    font-size: 24px;
+    color: #fff;
+}
+
+.dash-button:hover i {
+    color: #010d1a;
+    /* Change color on hover if needed */
+}
